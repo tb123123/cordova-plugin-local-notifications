@@ -2,7 +2,7 @@
 
 <plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
         xmlns:android="http://schemas.android.com/apk/res/android"
-        id="de.appplant.cordova.plugin.local-notification"
+        id="com.footprint.cordova.plugin.local-notification"
         version="0.8.0dev">
 
     <name>LocalNotification</name>
@@ -41,7 +41,7 @@
     <platform name="android">
         <config-file target="res/xml/config.xml" parent="/*">
             <feature name="LocalNotification">
-                <param name="android-package" value="de.appplant.cordova.plugin.localnotification.LocalNotification"/>
+                <param name="android-package" value="com.footprint.cordova.plugin.localnotification.LocalNotification"/>
             </feature>
         </config-file>
 
@@ -52,14 +52,14 @@
              * Android notification bar. The notification uses the default notification
              * sound and it vibrates the phone.
             -->
-            <receiver android:name="de.appplant.cordova.plugin.localnotification.Receiver" />
+            <receiver android:name="com.footprint.cordova.plugin.localnotification.Receiver" />
 
             <!--
              * This class is triggered upon reboot of the device. It needs to re-register
              * the alarms with the AlarmManager since these alarms are lost in case of
              * reboot.
              -->
-            <receiver android:name="de.appplant.cordova.plugin.localnotification.Restore" >
+            <receiver android:name="com.footprint.cordova.plugin.localnotification.Restore" >
                 <intent-filter>
                     <action android:name="android.intent.action.BOOT_COMPLETED" />
                 </intent-filter>
@@ -70,7 +70,7 @@
              * The activity calls the background callback and brings the launch inten
              * up to foreground.
             -->
-            <activity android:name="de.appplant.cordova.plugin.localnotification.ReceiverActivity" android:launchMode="singleInstance" />
+            <activity android:name="com.footprint.cordova.plugin.localnotification.ReceiverActivity" android:launchMode="singleInstance" />
         </config-file>
 
         <config-file target="AndroidManifest.xml" parent="/manifest">

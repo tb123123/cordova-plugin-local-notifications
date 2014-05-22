@@ -19,7 +19,7 @@
     under the License.
 */
 
-package de.appplant.cordova.plugin.localnotification;
+package com.footprint.cordova.plugin.localnotification;
 
 import java.util.Calendar;
 import java.util.Random;
@@ -119,6 +119,7 @@ public class Receiver extends BroadcastReceiver {
         Uri sound = options.getSound();
 
         Builder notification = new NotificationCompat.Builder(context)
+			.setDefaults(0)
             .setContentTitle(options.getTitle())
             .setContentText(options.getMessage())
             .setNumber(options.getBadge())

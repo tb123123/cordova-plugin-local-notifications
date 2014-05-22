@@ -19,7 +19,7 @@
     under the License.
 */
 
-package de.appplant.cordova.plugin.localnotification;
+package com.footprint.cordova.plugin.localnotification;
 
 import java.io.IOException;
 import java.io.InputStream;

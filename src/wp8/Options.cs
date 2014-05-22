@@ -23,7 +23,7 @@ using System;
 using System.Linq;
 using System.Runtime.Serialization;
 
-namespace De.APPPlant.Cordova.Plugin.LocalNotification
+namespace com.footprint.cordova.Plugin.LocalNotification
 {
     /// <summary>
     /// Represents LiveTile options
