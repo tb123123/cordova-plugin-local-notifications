@@ -227,6 +227,13 @@ public class Options {
     public Boolean getAutoCancel () {
         return options.optBoolean("autoCancel", false);
     }
+	
+	 /**
+     * Returns whether notification is cancelled automatically when clicked.
+     */
+    public Boolean getOnlyAlertOnce () {
+        return options.optBoolean("onlyAlertOnce", false);
+    }
 
     /**
      * Returns whether the notification is ongoing (uncancellable). Android only.

@@ -119,7 +119,8 @@ public class Receiver extends BroadcastReceiver {
         Uri sound = options.getSound();
 
         Builder notification = new NotificationCompat.Builder(context)
-			.setDefaults(0)
+		    .setVibrate([0,0])
+			.setOnlyAlertOnce(options.getOnlyAlertOnce())
             .setContentTitle(options.getTitle())
             .setContentText(options.getMessage())
             .setNumber(options.getBadge())
